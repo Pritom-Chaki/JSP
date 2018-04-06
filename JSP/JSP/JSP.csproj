@@ -206,15 +206,25 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\BlogController.cs" />
+    <Compile Include="Controllers\ContestsController.cs" />
+    <Compile Include="Controllers\EventsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\PostsController.cs" />
+    <Compile Include="Controllers\ProblemsController.cs" />
+    <Compile Include="Controllers\ProblemSetsController.cs" />
+    <Compile Include="Controllers\RankController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Admin.cs" />
+    <Compile Include="Models\Blog.cs" />
     <Compile Include="Models\Contest.cs" />
     <Compile Include="Models\Contestant.cs" />
+    <Compile Include="Models\Event.cs" />
     <Compile Include="Models\Host.cs" />
     <Compile Include="Models\HostType.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -229,6 +239,7 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\lumen-bootstrap.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -290,9 +301,16 @@
     <Content Include="Views\Layouts\_Contest_List.cshtml" />
     <Content Include="Views\Layouts\_Dashboard.cshtml" />
     <Content Include="Views\Layouts\_Show_Problem.cshtml" />
+    <Content Include="Views\Contests\Index.cshtml" />
+    <Content Include="Views\Blog\Index.cshtml" />
+    <Content Include="Views\Problems\Index.cshtml" />
+    <Content Include="Views\ProblemSets\Index.cshtml" />
+    <Content Include="Views\Rank\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Events\" />
+    <Folder Include="Views\Posts\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

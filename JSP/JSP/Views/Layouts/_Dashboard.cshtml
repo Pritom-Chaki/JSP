@@ -34,7 +34,7 @@
     }
     
     /* On small screens, set height to 'auto' for sidenav and grid */
-    @media screen and (max-width: 767px) {
+    @RenderBody() screen and (max-width: 767px) {
       .sidenav {
         height: auto;
         padding: 15px;
@@ -58,11 +58,11 @@
     <!-- Comment: Menu show. Position Upper side of window  -->
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Problem</a></li>
-        <li><a href="#">Rank</a></li>
-        <li><a href="#">Contest</a></li>
-        <li class="active"><a href="#">Dashboard</a></li>
+        <li><a href="http://localhost:7058/Home/Index">Home</a></li>
+        <li><a href="http://localhost:7058/Problems/Index">Problem</a></li>
+        <li><a href="http://localhost:7058/Rank/Index">Rank</a></li>
+        <li><a href="http://localhost:7058/Contests/Index">Contest</a></li>
+        <li class="active"><a href="http://localhost:7058/ProblemSets/Index">Dashboard</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login account Name</a></li>
@@ -263,7 +263,7 @@
     </div>
 <!-- Comment: Fotter for Creadit and other things show here. Position Bottom side of window -->
 <footer class="container-fluid text-center">
- <p>&copy; Company 2017</p>
+ <p>&copy; @DateTime.Now.Year - JSP online coding platform</p>
 </footer>
 
     <!-- Bootstrap core JavaScript

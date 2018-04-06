@@ -32,7 +32,7 @@
 	}
 	
 	/* On small screens, set height to 'auto' for sidenav and grid */
-	@media screen and (max-width: 767px) {
+	@RenderBody() screen and (max-width: 767px) {
 	  .sidenav {
 		height: auto;
 		padding: 15px;
@@ -42,65 +42,92 @@
   </style>
 </head>
 <body>
-<!-- Comment: Navbar for small window -->
-<nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container-fluid">
-	<div class="navbar-header">
-	  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-		<span class="icon-bar"></span>
-		<span class="icon-bar"></span>
-		<span class="icon-bar"></span>                        
-	  </button>
-	  <a class="navbar-brand" href="#">Logo</a>
-	</div>
-	<!-- Comment: Menu show. Position Upper side of window  -->
-	<div class="collapse navbar-collapse" id="myNavbar">
-	  <ul class="nav navbar-nav">
-		<li><a href="#">Home</a></li>
-		<li class="active"><a href="#">Problem</a></li>
-		<li><a href="#">Rank</a></li>
-		<li><a href="#">Dashboard</a></li>
-	  </ul>
-	  <ul class="nav navbar-nav navbar-right">
-		<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login account Name</a></li>
-	  </ul>
-	</div>
-  </div>
-</nav>
-<br>
-<br>
-  <!-- Comment: Link of all problem in contest show here. Position Left side of window  -->
-<div class="container-fluid text-center">    
-  <div class="row content">
-	<div class="col-sm-2 sidenav">
-	  <p><a href="#">Problem 1 link</a></p>
-	  <p><a href="#">Problem 2 link</a></p>
-	  <p><a href="#">Problem 3 link</a></p>
-	</div>
-	
-	 <!-- Comment: Problem details will be show here. Position Middle side of window  -->
-	<div class="col-sm-8 text-left"> 
-	  <h1>Problem Name</h1>
-	  <p>Problem Details <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-	  <hr>
-	  <h3>Test Case</h3>
-	  <p>Lorem ipsum...</p>
-	</div>
-	<!-- Comment: Comment about contest show here. Position Right side of window -->
-	<div class="col-sm-2 sidenav">
-	  <div class="well">
-		<p>Comment</p>
-	  </div>
-	  <div class="well">
-		<p>Comment</p>
-	  </div>
-	</div>
-  </div>
-</div>
-<!-- Comment: Fotter for Creadit and other things show here. Position Bottom side of window -->
-<footer class="container-fluid text-center">
- <p>&copy; Company 2017</p>
-</footer>
+    <!-- Comment: Navbar for small window -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Logo</a>
+            </div>
+            <!-- Comment: Menu show. Position Upper side of window  -->
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="http://localhost:7058/Home/Index">Home</a></li>
+                    <li class="active"><a href="#">Problem</a></li>
+                    <li><a href="http://localhost:7058/Rank/Index">Rank</a></li>
+                    <li><a href="http://localhost:7058/ProblemSets/Index">Dashboard</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login account Name</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <!-- Comment: Link of all problem in contest show here. Position Left side of window  -->
+    <div class="container-fluid text-center">
+        <div class="row content">
+            <div class="col-sm-2 sidenav">
+                <p><a href="#">Problem 1 link</a></p>
+                <p><a href="#">Problem 2 link</a></p>
+                <p><a href="#">Problem 3 link</a></p>
+            </div>
+
+            <!-- Comment: Problem details will be show here. Position Middle side of window  -->
+            <div class="col-sm-8 text-left">
+                <h1>Little monkey and oiled bamboo</h1>
+                @*<embed src="file:///E:/C%20no/Little%20monkey%20and%20oiled%20bamboo.pdf" width="100%" height="800px">*@
+                <pre style="font-size:18px">A little monkey was lost the forest. Unfortunately it has come to a human village. Therefore, the
+monkey is cute, everyone of that village is expecting to get the monkey and they are trying to
+capture it. The monkey has become afraid and it is thinking to go as higher as it can. There is a
+bamboo standing on the land nearby the monkey. Now, the monkey is trying to climb at the top
+of the bamboo. Alas! the bamboo is oiled.
+The monkey jumps 3 meter at once but it slipped down 1 meter every time without the last
+jump.
+
+Now, if the bamboo is N meter higher from land then calculate the number of jumps the monkey
+need to climb at the top of the bamboo.
+
+<b>Note: At the last jump the monkey will not be slipped down.</b>
+<hr />
+<b>Input:</b>
+    Input will be an Integer N in the range (3<=N<=100).
+
+<b>Output:</b>
+    Print only one Integer with a new line that describes the number of jumps little monkey needs.
+<hr />
+Sample Input:
+10
+
+Sample Output:
+5 
+<hr />
+ample Input:
+15
+
+Sample Output:
+7</pre>
+            </div>
+            <!-- Comment: Comment about contest show here. Position Right side of window -->
+            <div class="col-sm-2 sidenav">
+                <div class="well">
+                    <p>Comment</p>
+                </div>
+                <div class="well">
+                    <p>Comment</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Comment: Fotter for Creadit and other things show here. Position Bottom side of window -->
+    <footer class="container-fluid text-center">
+        <p>&copy; @DateTime.Now.Year - JSP online coding platform</p>
+    </footer>
 
 </body>
 </html>
